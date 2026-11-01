@@ -9,14 +9,15 @@ all; Claude does the rest and asks your permission for each step.
    your Claude Code; you'll see two permission requests."
 2. Run these two commands (each needs the person's approval):
    ```bash
-   claude plugin marketplace add applywing/applywing
+   claude plugin marketplace add https://github.com/applywing/applywing.git
    claude plugin install applywing@applywing
    ```
-   This installs the plugin for this user only and lets it update itself later
+   Use the full https address as written (the short `owner/repo` form may try SSH and fail on computers
+   without GitHub SSH keys). This installs the plugin for this user only and lets it update itself later
    (`claude plugin marketplace update applywing`).
 3. **If the `claude` command isn't available or fails,** install the skill folder directly instead:
    - Download `https://github.com/applywing/applywing/archive/refs/heads/main.zip` to a temporary
-     folder and unzip it (Windows: `curl -L -o iska.zip <url>` then `tar -xf iska.zip`; macOS/Linux: same,
+     folder and unzip it (Windows: `curl -L -o applywing.zip <url>` then `tar -xf applywing.zip`; macOS/Linux: same,
      or `git clone --depth 1 https://github.com/applywing/applywing`).
    - Copy the folder `skills/applywing` to `~/.claude/skills/applywing` (Windows:
      `%USERPROFILE%\.claude\skills\applywing`). Create `skills` if it doesn't exist.
