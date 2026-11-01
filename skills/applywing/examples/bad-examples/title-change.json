@@ -1,0 +1,22 @@
+{
+  "_note": "DELIBERATELY BAD example: tries to change a title for the ad (A2). The script stops without writing files.",
+  "company": "Bluewave Travel Services",
+  "role": "Customer Support Team Lead",
+  "experience": [
+    [
+      "travel",
+      [
+        "calls",
+        "zendesk"
+      ],
+      "Customer Support Team Lead"
+    ],
+    [
+      "furniture",
+      [
+        "orders",
+        "unknown-bullet"
+      ]
+    ]
+  ]
+}

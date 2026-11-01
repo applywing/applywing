@@ -1,0 +1,21 @@
+{
+  "name": "applywing",
+  "version": "0.6.0",
+  "description": "Applywing: job-search buddy. Finds jobs, writes honest CVs and cover letters (Word + PDF) for each country's customs, fills application forms after your OK, tracks applications, prepares interviews. Free; not affiliated with Anthropic.",
+  "author": {
+    "name": "applywing"
+  },
+  "license": "MIT",
+  "keywords": [
+    "job-search",
+    "cv",
+    "resume",
+    "cover-letter",
+    "interview",
+    "job-application",
+    "multilingual",
+    "is-arama"
+  ],
+  "homepage": "https://applywing.github.io/applywing/",
+  "repository": "https://github.com/applywing/applywing"
+}

@@ -1,0 +1,47 @@
+{
+  "_note": "FICTIONAL ad selection. Only job and line keys from the profile are used; titles, companies and dates never change.",
+  "company": "Bluewave Travel Services",
+  "role": "Customer Support Specialist with Turkish",
+  "family": "Customer Support",
+  "city": "Warsaw (hybrid)",
+  "country": "PL",
+  "link": "https://example.com/jobs/bluewave-customer-support-turkish",
+  "jobAd": "Customer Support Specialist with Turkish. Warsaw, hybrid, 2 days in the office. Salary 6,000 - 7,500 PLN gross. Fluent Turkish and English B2+. At least 1 year of customer service. Zendesk is a plus. Shifts 8:00-20:00 Monday to Friday. Polish is not required.",
+  "headline": "Customer Support Specialist | Turkish & English",
+  "profile": "Three years of customer support at a travel agency in Istanbul: around 40 calls and emails a day in Turkish and English about bookings, changes and cancellations, every case logged in Zendesk, and refunds and rebookings arranged with hotels and airlines. After that, 18 months as an order administrator, answering customer questions about delivery dates and tracking supplier deliveries.",
+  "skills": [
+    "Customer support by phone and email in Turkish and English",
+    "Case logging and follow-up in Zendesk",
+    "Refunds and rebookings with hotels and airlines",
+    "Complaint handling within company policy",
+    "Order and delivery records in Excel"
+  ],
+  "experience": [
+    [
+      "travel",
+      [
+        "calls",
+        "zendesk",
+        "refunds",
+        "complaints"
+      ]
+    ],
+    [
+      "furniture",
+      [
+        "customers",
+        "orders",
+        "log"
+      ]
+    ]
+  ],
+  "other": [
+    [
+      "cafe",
+      [
+        "english"
+      ]
+    ]
+  ],
+  "coverLetter": "Dear Bluewave Travel Services team,\n\nI am applying for the Customer Support Specialist with Turkish role in Warsaw.\n\nFor three years I worked in customer support at a travel agency in Istanbul, answering around 40 calls and emails a day in Turkish and English about bookings, changes and cancellations. I logged every case in Zendesk and followed it up until it was closed, and I prepared refund and rebooking requests for hotels and airlines, which are the core tasks in your advert.\n\nI live in Warsaw, hold a Polish residence card and can work the 8:00 to 20:00 shifts you describe.\n\nKind regards,\nEce Yildirim"
+}

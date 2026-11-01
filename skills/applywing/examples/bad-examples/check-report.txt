@@ -1,0 +1,55 @@
+# Deliberately bad examples: output of the check program (messages are in Turkish)
+# Exit code 1 = failed (no files written), 0 = clean
+
+$ python ../scripts/check.py --profile profile-en.json --job bad-examples/bad-selection.json
+  HATA    CV: 'Looking for…' yasak: ne aradığını değil ne getirdiğini yaz [C2]: bulunan "looking for"
+  HATA    CV: yapay zekâ kullanımı yetkinlik gibi yazılmaz ('with AI assistance' vb.) [C10]: bulunan "with AI"
+  HATA    CV: 'öğrenmek istiyorum' çerçevesi: ne getirdiğini yaz [C3/D2]: bulunan "where I can learn"
+  HATA    CV: boş sıfat ya da kanıtsız iddia: yerine somut iş ya da rakam yaz [C5]: bulunan "Passionate, Results-driven, Team player"
+  HATA    CV: kanıtsız Excel seviyesi: yapabildiği somut işi yaz (filtre, lookup, pivot…). Kanıt varsa lintAllow'a 'excel-seviye' eklenir [A6]: bulunan "advanced Excel"
+  HATA    CV: uzun tire ya da ok işareti (yapay zekâ kokusu): virgül ya da nokta kullan [C9]: bulunan "—"
+  KONTROL CV: yıl iddiası: tarihlerle birebir tutuyor mu, ayrı işler birleştirilmiş mi? [A5]: bulunan "5 years"
+  KONTROL CV: seviye iddiası: profildeki dürüst seviyeyle aynı mı? [A6/E4]: bulunan "Fluent"
+  HATA    CV: kişinin 'asla yazma' listesi: "team leader" [A10]
+  HATA    CV: kişinin 'asla yazma' listesi: "fluent Polish" [A10]
+  HATA    CV: kişinin 'yapmadım' listesi: "SAP" [A10]
+  HATA    CV: profilde olmayan program/sistem: "SAP" [A3]. Kişi gerçekten kullandıysa önce profile eklenir
+  HATA    CV: profilde olmayan program/sistem: "Salesforce" [A3]. Kişi gerçekten kullandıysa önce profile eklenir
+  HATA    CV: profilde olmayan rakam/sayı: 5 [A1]. Rakam yalnız onaylı profilden gelir (yazıyla yazılan sayılar da)
+  HATA    Ön yazı: 'öğrenmek istiyorum' çerçevesi: ne getirdiğini yaz [C3/D2]: bulunan "eager to learn"
+  HATA    Ön yazı: eksiği kendiliğinden söylemek: soru gelmeden eksik yazılmaz [C4]: bulunan "haven't used"
+  HATA    Ön yazı: boş sıfat ya da kanıtsız iddia: yerine somut iş ya da rakam yaz [C5]: bulunan "passionate"
+  HATA    Ön yazı: boş övgü: şirket hakkında yalnız ilanda yazanı kullan [D2]: bulunan "prestigious"
+  KONTROL Ön yazı: yüzde rakamı: kişi bunu kanıtlayabilir mi? [A1]: bulunan "95%"
+  HATA    Ön yazı: kişinin 'yapmadım' listesine çok benziyor: "managing a team" ~ "managed a team" [A10]
+  HATA    Ön yazı: profilde olmayan rakam/sayı: 8, 95 [A1]. Rakam yalnız onaylı profilden gelir (yazıyla yazılan sayılar da)
+SONUÇ: HATALI. Düzeltmeden kişiye verme.
+(exit code: 1)
+
+$ python ../scripts/check.py --profile profile-en.json --text bad-examples/invented-cover-letter.txt
+  HATA    bad-examples/invented-cover-letter.txt: kişinin 'yapmadım' listesine çok benziyor: "managing a team" ~ "managed a team" [A10]
+  HATA    bad-examples/invented-cover-letter.txt: profilde olmayan program/sistem: "Logo Tiger" [A3]. Kişi gerçekten kullandıysa önce profile eklenir
+  HATA    bad-examples/invented-cover-letter.txt: profilde olmayan program/sistem: "Netsis" [A3]. Kişi gerçekten kullandıysa önce profile eklenir
+  HATA    bad-examples/invented-cover-letter.txt: profilde olmayan rakam/sayı: 8, 100, 500 [A1]. Rakam yalnız onaylı profilden gelir (yazıyla yazılan sayılar da)
+SONUÇ: HATALI. Düzeltmeden kişiye verme.
+(exit code: 1)
+
+$ python ../scripts/check.py --profile profile-en.json --text bad-examples/honest-answer.txt
+  HATA    bad-examples/honest-answer.txt: eksiği kendiliğinden söylemek: soru gelmeden eksik yazılmaz [C4]: bulunan "haven't used"
+  HATA    bad-examples/honest-answer.txt: kişinin 'yapmadım' listesi: "SAP" [A10]
+  HATA    bad-examples/honest-answer.txt: profilde olmayan program/sistem: "SAP" [A3]. Kişi gerçekten kullandıysa önce profile eklenir
+SONUÇ: HATALI. Düzeltmeden kişiye verme.
+(exit code: 1)
+
+$ python ../scripts/check.py --profile profile-en.json --text bad-examples/honest-answer.txt --answer
+  KONTROL bad-examples/honest-answer.txt: eksiği kendiliğinden söylemek: soru gelmeden eksik yazılmaz [C4]: bulunan "haven't used"
+  KONTROL bad-examples/honest-answer.txt: kişinin 'yapmadım' listesi: "SAP" [A10]
+  KONTROL bad-examples/honest-answer.txt: profilde olmayan program/sistem: "SAP" [A3]. Kişi gerçekten kullandıysa önce profile eklenir (cevapta yalnız 'kullanmadım' anlamında geçmeli)
+SONUÇ: TEMİZ (3 uyarı; KONTROL maddelerini gerçekle karşılaştır).
+(exit code: 0)
+
+$ python ../scripts/build_cv.py --profile profile-en.json --job bad-examples/title-change.json
+  HATA    CV: 'travel': unvan ilana göre değiştirilemez [A2]
+  HATA    CV: bilinmeyen madde: 'furniture.unknown-bullet'
+SONUÇ: HATALI. Düzeltmeden kişiye verme.
+(exit code: 1)

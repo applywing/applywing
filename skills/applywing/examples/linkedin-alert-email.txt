@@ -1,0 +1,47 @@
+[FICTIONAL EXAMPLE. Not a real email; companies and job IDs are made up.]
+[Shows what the assistant sees in source A (job alert emails in the job Gmail).]
+
+From: LinkedIn Job Alerts <jobalerts-noreply@linkedin.com>
+To: ece.yildirim.example@gmail.com
+Subject: "customer service Turkish": 6 new jobs in Warsaw
+Date: Thu, 29 Oct 2026 07:12
+
+Your job alert for customer service Turkish in Warsaw, Mazowieckie, Poland
+6 new jobs match your preferences.
+
+Customer Support Specialist with Turkish
+Bluewave Travel Services
+Warsaw, Mazowieckie, Poland (Hybrid)
+6,000 - 7,500 PLN / month
+Actively recruiting
+View job: https://www.linkedin.com/comm/jobs/view/4100000001/?trackingId=example
+
+Junior Purchasing Assistant
+Vistula Parts Distribution
+Warsaw, Mazowieckie, Poland (On-site)
+Be an early applicant
+View job: https://www.linkedin.com/comm/jobs/view/4100000002/?trackingId=example
+
+Specjalista ds. Obsługi Klienta z językiem tureckim
+Example BPO Polska
+Warsaw, Mazowieckie, Poland (On-site)
+View job: https://www.linkedin.com/comm/jobs/view/4100000003/?trackingId=example
+
+Customer Service Agent (Turkish) - Night Shift
+Example Contact Center
+Warsaw, Mazowieckie, Poland (On-site)
+View job: https://www.linkedin.com/comm/jobs/view/4100000004/?trackingId=example
+
+Remote Data Entry - Turkish speakers - earn 3000 EUR per week, contact us on Telegram
+Global Remote Jobs Agency
+Poland (Remote)
+View job: https://www.linkedin.com/comm/jobs/view/4100000005/?trackingId=example
+
+Order Administrator (English)
+Example Retail Group
+Warsaw, Mazowieckie, Poland (Hybrid)
+View job: https://www.linkedin.com/comm/jobs/view/4100000006/?trackingId=example
+
+See all jobs
+
+You are receiving Job Alert emails. Manage your alerts. Unsubscribe.

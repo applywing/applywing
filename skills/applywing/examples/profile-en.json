@@ -1,0 +1,111 @@
+{
+  "_note": "FICTIONAL example person. Not a real person, company or contact. For testing and demos.",
+  "name": "Ece Yildirim",
+  "contact": "Warsaw, Poland · +48 500 000 000 · ece.yildirim.example@gmail.com · linkedin.com/in/example",
+  "cvLanguage": "en",
+  "country": "PL",
+  "headline": "Customer Support & Order Administration | Turkish & English",
+  "profile": "Customer support and order administration experience from two companies in Istanbul: three years answering customer calls and emails in Turkish and English at a travel agency, then 18 months placing and tracking supplier orders at a furniture importer. I keep every case and order recorded until it is closed and explain the outcome clearly to the customer.",
+  "skills": [
+    "Customer support by phone and email in Turkish and English",
+    "Case logging and follow-up in Zendesk",
+    "Purchase orders and delivery tracking",
+    "Checking supplier invoices against orders",
+    "Order and delivery records in Excel"
+  ],
+  "jobs": {
+    "travel": {
+      "title": "Customer Support Specialist",
+      "org": "Example Travel Agency",
+      "place": "Istanbul, Turkey",
+      "dates": "06/2019 – 08/2022",
+      "ctx": "Mid-size agency selling package tours to Turkish and international customers.",
+      "bullets": {
+        "calls": "Answered around 40 customer calls and emails a day in Turkish and English about bookings, changes and cancellations.",
+        "zendesk": "Logged every customer case in Zendesk and followed it up until it was closed.",
+        "refunds": "Prepared refund and rebooking requests for hotels and airlines and informed customers of the outcome.",
+        "complaints": "Handled complaints from customers whose trips were disrupted, offering the options the agency's policy allowed."
+      }
+    },
+    "furniture": {
+      "title": "Office & Order Administrator",
+      "org": "Example Furniture Import",
+      "place": "Istanbul, Turkey",
+      "dates": "09/2022 – 03/2024",
+      "ctx": "Small importer with 12 employees.",
+      "bullets": {
+        "orders": "Placed purchase orders with 6 suppliers in Turkey and Italy and tracked each delivery until arrival.",
+        "log": "Kept the order and delivery log in Excel (filters, VLOOKUP) and sent the owner a weekly status list.",
+        "invoices": "Checked supplier invoices against the original orders before passing them to the external accountant.",
+        "customers": "Answered customer questions about delivery dates by phone and email."
+      }
+    },
+    "cafe": {
+      "title": "Barista (part-time)",
+      "org": "Example Café",
+      "place": "Warsaw, Poland",
+      "dates": "06/2024 – 05/2025",
+      "bullets": {
+        "english": "Served customers in English during busy morning shifts."
+      }
+    }
+  },
+  "experience": [
+    [
+      "travel",
+      [
+        "calls",
+        "zendesk",
+        "refunds"
+      ]
+    ],
+    [
+      "furniture",
+      [
+        "orders",
+        "log",
+        "invoices"
+      ]
+    ]
+  ],
+  "other": [
+    [
+      "cafe",
+      [
+        "english"
+      ]
+    ]
+  ],
+  "education": [
+    "BA Tourism Management · Example University, Istanbul · 2019"
+  ],
+  "languages": "Turkish (native) · English (B2) · Polish (A1, course in progress)",
+  "itSkills": "Excel (filters, VLOOKUP, basic PivotTables) · Google Sheets · Zendesk · Outlook",
+  "standardAnswers": {
+    "currentlyEmployed": "No",
+    "noticePeriod": "None",
+    "earliestStart": "Within two weeks",
+    "salaryExpectation": "6,500 PLN gross per month (customer support) · 6,800 PLN gross (purchasing / order administration)",
+    "salaryNet": "4,700 PLN net (customer support) · 4,900 PLN net (purchasing / order administration)",
+    "workPermit": "I hold a Polish residence card with free access to the labour market; no work permit or sponsorship is required.",
+    "sponsorshipRequired": "No",
+    "authorisedWithoutSponsorship": "Yes",
+    "euCitizen": "No",
+    "workMode": "Warsaw office or hybrid, or fully remote",
+    "shifts": "Day shifts between 7:00 and 20:00; no night shifts",
+    "drivingLicence": "Category B",
+    "diversityQuestions": "Prefer not to say"
+  },
+  "neverWrite": [
+    "team leader",
+    "fluent Polish"
+  ],
+  "notDone": [
+    "SAP",
+    "managing a team",
+    "sales targets",
+    "accounting entries"
+  ],
+  "lintAllow": [],
+  "cvPages": 1
+}

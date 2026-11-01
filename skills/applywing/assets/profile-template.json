@@ -1,0 +1,52 @@
+{
+  "_note": "CV DATA template. Fields starting with '_' are notes and ignored. Filled examples: examples/profile-en.json (English CV), examples/profile-tr.json (Turkish CV with photo).",
+  "name": "First Last (for English/international CVs in plain Latin letters)",
+  "contact": "City, Country · +00 000 000 000 · job.email@gmail.com · linkedin.com/in/...",
+  "cvLanguage": "en",
+  "country": "XX (default target country, ISO code; PL and IT add a consent line automatically)",
+  "futureRecruitment": false,
+  "cvPages": 1,
+  "_headings_note": "Only for CV languages without built-in headings (built-in: en, de, tr, pl, fr, es, it, nl, pt). Keys: profile, skills, experience, other, projects, education, languages, it",
+  "headline": "Default headline in the CV language (tailored per job)",
+  "profile": "Default profile paragraph: 2-4 sentences, confirmed facts only.",
+  "skills": ["Concrete skill 1", "Concrete skill 2", "Concrete skill 3"],
+  "jobs": {
+    "job1": {
+      "title": "Real title (never upgraded; may be translated)",
+      "org": "Company",
+      "place": "City, Country",
+      "dates": "MM/YYYY – MM/YYYY",
+      "ctx": "Optional: one sentence about the company",
+      "bullets": {
+        "line1": "Past tense, one sentence, concrete work + scale (approved).",
+        "line2": "..."
+      }
+    }
+  },
+  "experience": [["job1", ["line1", "line2"]]],
+  "other": [],
+  "education": ["Degree · School, City · Year"],
+  "languages": "Language (level) · Language (level)",
+  "itSkills": "Excel (what exactly) · other programs",
+  "projects": [],
+  "standardAnswers": {
+    "_note": "Facts that appear on forms and in cover letters, in the CV language. The check verifies numbers against these too.",
+    "currentlyEmployed": "Yes / No",
+    "noticePeriod": "...",
+    "earliestStart": "...",
+    "salaryExpectation": "... per month/year, gross/net, currency",
+    "workPermit": "the one sentence the person approved",
+    "sponsorshipRequired": "Yes / No",
+    "authorisedWithoutSponsorship": "Yes / No",
+    "validResidencePermit": "Yes / No",
+    "euCitizen": "Yes / No",
+    "workMode": "...",
+    "shifts": "...",
+    "drivingLicence": "...",
+    "diversityQuestions": "Prefer not to say",
+    "keepDataForFutureRecruitment": "Yes / No"
+  },
+  "neverWrite": ["phrases the person never wants written (CV language)"],
+  "notDone": ["things/programs they did not do but people might assume (e.g. SAP)"],
+  "lintAllow": []
+}

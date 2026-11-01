@@ -1,0 +1,101 @@
+{
+  "_note": "FICTIONAL example: the same person's Turkish CV data for jobs in Turkey (photos are common there). Each CV language has its own approved data.",
+  "name": "Ece Yıldırım",
+  "contact": "Varşova, Polonya · +48 500 000 000 · ece.yildirim.example@gmail.com · linkedin.com/in/example",
+  "cvLanguage": "tr",
+  "country": "TR",
+  "cvPages": 1,
+  "headline": "Müşteri Destek ve Sipariş Yönetimi | Türkçe, İngilizce",
+  "profile": "İstanbul'da iki şirkette müşteri desteği ve sipariş yönetimi deneyimi: bir seyahat acentesinde üç yıl Türkçe ve İngilizce müşteri çağrılarını ve e-postalarını yanıtladım, ardından bir mobilya ithalatçısında 18 ay tedarikçi siparişlerini verip takip ettim. Her talebi ve siparişi kapanana kadar kayıt altında tutar, sonucu müşteriye açıkça anlatırım.",
+  "skills": [
+    "Telefon ve e-postayla Türkçe ve İngilizce müşteri desteği",
+    "Zendesk'te talep kaydı ve takibi",
+    "Satın alma siparişleri ve teslimat takibi",
+    "Tedarikçi faturalarının siparişlerle karşılaştırılması",
+    "Excel'de sipariş ve teslimat kayıtları"
+  ],
+  "jobs": {
+    "travel": {
+      "title": "Müşteri Destek Uzmanı",
+      "org": "Example Travel Agency",
+      "place": "İstanbul, Türkiye",
+      "dates": "06/2019 – 08/2022",
+      "ctx": "Türk ve yabancı müşterilere paket tur satan orta ölçekli acente.",
+      "bullets": {
+        "calls": "Rezervasyon, değişiklik ve iptallerle ilgili günde yaklaşık 40 müşteri çağrısını ve e-postasını Türkçe ve İngilizce yanıtladım.",
+        "zendesk": "Her müşteri talebini Zendesk'e kaydedip kapanana kadar takip ettim.",
+        "refunds": "Oteller ve havayolları için iade ve rezervasyon değişikliği taleplerini hazırlayıp sonucu müşteriye bildirdim.",
+        "complaints": "Seyahati aksayan müşterilerin şikâyetlerini acentenin kurallarının izin verdiği seçeneklerle çözdüm."
+      }
+    },
+    "furniture": {
+      "title": "Ofis ve Sipariş Sorumlusu",
+      "org": "Example Furniture Import",
+      "place": "İstanbul, Türkiye",
+      "dates": "09/2022 – 03/2024",
+      "ctx": "12 çalışanlı küçük bir ithalat şirketi.",
+      "bullets": {
+        "orders": "Türkiye ve İtalya'daki 6 tedarikçiye satın alma siparişi verip her teslimatı varışa kadar takip ettim.",
+        "log": "Sipariş ve teslimat listesini Excel'de (filtre, DÜŞEYARA) tuttum, işletme sahibine haftalık durum listesi gönderdim.",
+        "invoices": "Tedarikçi faturalarını dış muhasebeciye iletmeden önce asıl siparişlerle karşılaştırdım.",
+        "customers": "Müşterilerin teslim tarihi sorularını telefon ve e-postayla yanıtladım."
+      }
+    },
+    "cafe": {
+      "title": "Barista (yarı zamanlı)",
+      "org": "Example Café",
+      "place": "Varşova, Polonya",
+      "dates": "06/2024 – 05/2025",
+      "bullets": {
+        "english": "Yoğun sabah vardiyalarında müşterilere İngilizce hizmet verdim."
+      }
+    }
+  },
+  "experience": [
+    [
+      "travel",
+      [
+        "calls",
+        "zendesk",
+        "refunds"
+      ]
+    ],
+    [
+      "furniture",
+      [
+        "orders",
+        "log",
+        "invoices"
+      ]
+    ]
+  ],
+  "other": [
+    [
+      "cafe",
+      [
+        "english"
+      ]
+    ]
+  ],
+  "education": [
+    "Turizm İşletmeciliği Lisans · Example University, İstanbul · 2019"
+  ],
+  "languages": "Türkçe (ana dil) · İngilizce (B2) · Lehçe (A1, kursa devam ediyor)",
+  "itSkills": "Excel (filtre, DÜŞEYARA, temel pivot tablo) · Google E-Tablolar · Zendesk · Outlook",
+  "standardAnswers": {
+    "earliestStart": "İki hafta içinde",
+    "noticePeriod": "Yok",
+    "drivingLicence": "B sınıfı"
+  },
+  "neverWrite": [
+    "takım lideri",
+    "akıcı Lehçe"
+  ],
+  "notDone": [
+    "SAP",
+    "ekip yönetimi",
+    "satış hedefi",
+    "muhasebe kaydı"
+  ],
+  "lintAllow": []
+}

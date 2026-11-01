@@ -1,0 +1,44 @@
+{
+  "_note": "FICTIONAL. SAP is a 'plus' in the ad; the person never used it, so it appears neither in the CV nor in the cover letter (A3, C4).",
+  "company": "Vistula Parts Distribution",
+  "role": "Junior Purchasing Assistant",
+  "family": "Purchasing",
+  "city": "Warsaw",
+  "country": "PL",
+  "link": "https://example.com/jobs/vistula-junior-purchasing-assistant",
+  "jobAd": "Junior Purchasing Assistant. Warsaw office. 1-2 years of experience in purchasing, order administration or similar back-office role. English B2+. Good knowledge of Excel. SAP MM is a plus. Turkish or Italian is an advantage.",
+  "headline": "Purchase Orders & Supplier Administration | English & Turkish",
+  "profile": "Order administration experience at a furniture importer in Istanbul: 18 months placing purchase orders with 6 suppliers in Turkey and Italy, tracking each delivery and checking supplier invoices against the original orders before they went to the external accountant. Before that, three years of customer support in Turkish and English at a travel agency, where every case was logged and followed up until it was closed.",
+  "skills": [
+    "Purchase orders and delivery tracking",
+    "Checking supplier invoices against orders",
+    "Supplier communication in English and Turkish",
+    "Order and delivery records in Excel (filters, VLOOKUP)",
+    "Customer support by phone and email"
+  ],
+  "experience": [
+    [
+      "furniture",
+      [
+        "orders",
+        "invoices",
+        "log",
+        "customers"
+      ]
+    ],
+    [
+      "travel",
+      [
+        "calls",
+        "refunds"
+      ]
+    ]
+  ],
+  "other": [
+    [
+      "cafe",
+      []
+    ]
+  ],
+  "coverLetter": "Dear Hiring Team,\n\nI am applying for the Junior Purchasing Assistant position at Vistula Parts Distribution.\n\nAt a furniture importer in Istanbul I placed purchase orders with 6 suppliers in Turkey and Italy, tracked each delivery until arrival and checked supplier invoices against the original orders before they went to the external accountant. I kept the order and delivery log in Excel and sent the owner a weekly status list.\n\nYour purchasing team works with suppliers in Turkey, and I can handle that communication in Turkish as well as in English. I live in Warsaw and can start within two weeks.\n\nKind regards,\nEce Yildirim"
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Applywing · free job application assistant</title>
+<meta name="description" content="Applywing: Claude Code ile çalışan ücretsiz iş başvuru asistanı. A free job application assistant for Claude Code.">
+<style>
+:root{--bg:#F6F3EC;--card:#FFFFFF;--navy:#1F3A5F;--ink:#1B1B1B;--muted:#5B6470;--amber:#E8A33D;
+--line:#E3DDD0;--red:#C8433A}
+@media (prefers-color-scheme: dark){:root{--bg:#121820;--card:#1B2430;--navy:#9CC0EA;--ink:#E8EDF3;
+--muted:#A3AEBB;--line:#2A3644;--red:#F08A80}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 60px}
+.bar{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.brand{font-weight:700;color:var(--navy);display:flex;align-items:center;gap:10px}
+.brand::before{content:"";width:14px;height:14px;border-radius:50%;background:var(--amber)}
+.langs button{font:inherit;font-size:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);
+ border-radius:20px;padding:4px 12px;cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--navy);color:var(--bg);border-color:var(--navy)}
+h1{font-size:clamp(32px,8vw,50px);line-height:1.06;color:var(--navy);margin:26px 0 14px;letter-spacing:-.5px}
+h2{font-size:25px;color:var(--navy);margin:42px 0 12px}
+p.lead{font-size:20px;color:var(--muted);margin:0 0 22px}
+.btn{display:inline-block;background:var(--amber);color:#1F3A5F;font-weight:800;text-decoration:none;
+ padding:15px 26px;border-radius:40px;font-size:19px}
+.meta{color:var(--muted);font-size:15px;margin-top:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.card b{color:var(--navy);display:block;margin-bottom:4px}
+ul.no{list-style:none;padding:0;margin:0}
+ul.no li{padding-left:28px;position:relative;margin:8px 0}
+ul.no li::before{content:"✗";position:absolute;left:4px;color:var(--red);font-weight:800}
+ol.steps{padding-left:0;list-style:none;counter-reset:s;margin:0}
+ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:16px;
+ padding:14px 18px 14px 62px;position:relative;margin:10px 0}
+ol.steps li::before{content:counter(s);position:absolute;left:16px;top:12px;width:32px;height:32px;border-radius:50%;
+ background:var(--navy);color:var(--bg);font-weight:800;display:flex;align-items:center;justify-content:center}
+code{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1px 6px;font-size:15px;
+ overflow-wrap:anywhere}
+.note{background:var(--card);border-left:4px solid var(--amber);border-radius:8px;padding:12px 16px;margin:14px 0}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:8px 0}
+summary{cursor:pointer;font-weight:600;color:var(--navy)}
+footer{margin-top:50px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+a{color:var(--navy)}
+[data-lang]{display:none}
+html[lang="tr"] [data-lang="tr"],html[lang="en"] [data-lang="en"]{display:block}
+</style>
+</head>
+<body>
+<main>
+<div class="bar">
+  <div class="brand">Applywing <span data-lang="tr" style="font-weight:400">· iş başvurularında yanındaki kankan</span><span data-lang="en" style="font-weight:400">· your job application buddy</span></div>
+  <div class="langs"><button type="button" data-set="tr">Türkçe</button> <button type="button" data-set="en">English</button></div>
+</div>
+
+<!-- ───────────── TÜRKÇE ───────────── -->
+<div data-lang="tr">
+<h1>Hangi ülkede iş ararsan ara: ücretsiz yapay zekâ iş başvuru asistanın</h1>
+<p class="lead">CV'ni okur, seçtiğin sitelerde ilanları arar (ülkene uygun siteleri o önerir),
+sana uymayanları baştan eler, ilana ve ülkenin kurallarına göre <b>dürüst</b> CV ve ön yazı hazırlar.
+Başvuru formunu da doldurur; senin onayın olmadan hiçbir şey göndermez.</p>
+<div class="note"><b>Kurulum tek cümle:</b> Claude Code'u aç ve şunu yapıştır:<br>
+<code>Bunu kur: https://github.com/applywing/applywing</code></div>
+<div class="meta">İki izin sorusuna "izin ver" de, sonra yeni oturumda "iş arıyorum" yaz · tanışma 30–40 dakika (istersen parça parça; ne kadar çok anlatırsan o kadar iyi, her soruyu geçebilirsin) · Claude Code gerekir (ücretli Claude planı: Pro ya da Max).</div>
+
+<h2>Ne yapar?</h2>
+<div class="grid">
+  <div class="card"><b>Tanışır</b>CV'ni okur, hedefini ve hangi ülkede çalışmak istediğini sorar. Bilgilerin kendi bilgisayarındaki iş klasöründe durur.</div>
+  <div class="card"><b>İlan arar</b>Seçtiğin sitelerin bildirimlerini ve web'i tarar. Dil şartı, izin, şehir, şüpheli ilanlar elenir.</div>
+  <div class="card"><b>Dürüst CV yazar</b>İlanın diline ve ülkenin geleneğine göre (sayfa sayısı, fotoğraf, onay cümlesi); Word + PDF.</div>
+  <div class="card"><b>Takip eder</b>Başvuru tablosu, haftalık özet, takip maili taslağı, mülakat hazırlığı.</div>
+</div>
+
+<h2>Asla yapmaz</h2>
+<ul class="no">
+  <li>Senin onayın olmadan başvuru, mail ya da mesaj göndermek (önce ne yazdığını gösterir)</li>
+  <li>Şifreni, kimlik numaranı, kart bilgini istemek</li>
+  <li>CV'ne senin söylemediğin bir program, yıl ya da rakam eklemek</li>
+</ul>
+
+<h2>Kurulum</h2>
+<ol class="steps">
+  <li>Claude masaüstü uygulamasını aç ve <b>Code</b> bölümüne geç (ya da terminalde <code>claude</code>).</li>
+  <li>Şunu yapıştır: <code>Bunu kur: https://github.com/applywing/applywing</code></li>
+  <li>Claude iki kez izin ister; ikisine de izin ver. Kurulum bitti.</li>
+  <li>Yeni oturum aç ve <b>"iş arıyorum"</b> yaz. Gerisini o sorar: iş klasörünü bilgisayarında oluşturur, gerekirse CV programı için Python'u (izninle) kurar, soruları tek tek sorar.</li>
+</ol>
+<div class="note">claude.ai sohbetinde (Code olmadan) kullanmak istersen: <a href="indir/applywing.zip" download>ZIP'i indir</a> → <code>Customize → Skills → + → Upload a skill</code>.</div>
+
+<h2>Çalışmıyorsa</h2>
+<ul>
+  <li>Kurulumdan sonra <b>yeni bir oturum</b> açtın mı? (Asistan oturum başında yüklenir.)</li>
+  <li>Claude'un istediği izinlere "izin ver" dedin mi?</li>
+  <li>Sonraki seferlerde Claude Code'u iş klasöründe açıp "devam" yazdın mı?</li>
+  <li>Takılırsan Claude'a yaz: "Applywing kurulumu çalışmadı, düzeltir misin?"</li>
+</ul>
+
+<h2>Sık sorulanlar</h2>
+<details><summary>Hangi ülkelerde çalışır?</summary><p>İş aradığın her ülkede. CV'yi ilanın diline ve o ülkenin geleneğine göre hazırlar (CV programı Latin, Kiril ve Yunan harfleriyle yazar). Popüler ülkeler için iş sitesi önerileri hazır, diğerlerini arayıp bulur.</p></details>
+<details><summary>Ücretli mi?</summary><p>Asistan ücretsiz. Claude Code gerekir (ücretli Claude planı: Pro ya da Max).</p></details>
+<details><summary>CV'mi siz görüyor musunuz?</summary><p>Hayır. Dosyaların kendi bilgisayarında, konuşmaların senin Claude hesabında. Asistanı yapan kimse hiçbir şey görmez.</p></details>
+<details><summary>Benim yerime başvurur mu?</summary><p>Neredeyse: CV'yi ve ön yazıyı hazırlar, formu doldurur, neyi nereye yazdığını gösterir; sen "gönder" deyince gönderir. Siteye giriş ve şifre senin.</p></details>
+<details><summary>İş buldurur mu?</summary><p>Garanti yok. Zaman kazandırır, uymayan ilanları eler, CV'ne uydurma bir şey yazmaz, mülakata hazırlar.</p></details>
+<details><summary>LinkedIn hesabıma girer mi?</summary><p>Hayır. LinkedIn otomatik kullanımı yasaklıyor. Asistan sitelerin kendi iş bildirim maillerini ve herkese açık ilanları kullanır.</p></details>
+<details><summary>Telefonda çalışır mı?</summary><p>Asistan bilgisayardaki Claude Code'da çalışır. Hazırladığı CV'leri telefona atıp oradan başvurabilirsin; istersen her sabah kendiliğinden ilan arar, yalnız bir şey yapman gerektiğinde haber verir.</p></details>
+<details><summary>Bilgilerim nerede duruyor?</summary><p>Kendi bilgisayarındaki "İş Arama" klasöründe: profilin, CV'lerin, başvuru tablon. Claude seninle çalışırken bu dosyaları okur; başvurduğun sitelere yalnız o başvuru için onayladığın bilgiler gider. Klasör OneDrive gibi bir bulut klasöründeyse oraya da kopyalanır.</p></details>
+<details><summary>Claude kullanım hakkımı çok harcar mı?</summary><p>Claude planlarının bir kullanım sınırı var; birkaç saatte bir, bir de haftalık yenilenir. En çok ilan ve mail taraması harcar. Asistan bu yüzden taramayı daha hafif bir Claude modeliyle yapar, CV ve ön yazı için güçlü modeli kullanır. Otomatik kontrolü ne kadar sık açarsan o kadar çok harcar. Sınır dolarsa Claude yenilenene kadar bekler; hiçbir şey kaybolmaz.</p></details>
+<details><summary>Örnek görebilir miyim?</summary><p><a href="indir/ornek-cv.pdf">Kurgusal bir kişi için üretilmiş örnek CV (PDF)</a></p></details>
+
+<h2>Claude Pro kullanıcıları</h2>
+<p>Güncellemeler kendiliğinden gelsin: <code>Customize → Plugins → Add marketplace → applywing/applywing</code></p>
+</div>
+
+<!-- ───────────── ENGLISH ───────────── -->
+<div data-lang="en">
+<h1>Your free AI job application buddy, for whichever country you're job hunting in</h1>
+<p class="lead">It reads your CV, searches the job sites you choose (and suggests good
+ones for your country), filters out ads that would reject you anyway, and writes an <b>honest</b> CV and cover
+letter for each job, following that country's customs, and fills in the application form. Nothing is sent without your OK.</p>
+<div class="note"><b>Install in one sentence:</b> open Claude Code and paste:<br>
+<code>Install this: https://github.com/applywing/applywing</code></div>
+<div class="meta">Allow the two permission requests, then write "I'm looking for a job" in a new session · getting to know you takes 30–40 minutes (can be split; the more you tell it, the better, and you can skip any question) · Needs Claude Code (paid Claude plan: Pro or Max).</div>
+
+<h2>What it does</h2>
+<div class="grid">
+  <div class="card"><b>Gets to know you</b>Reads your CV, asks your goals and where you want to work. Your data stays in the job folder on your own computer.</div>
+  <div class="card"><b>Finds jobs</b>Reads alerts from the sites you chose and searches the web. Language, permit, city and scam ads are filtered out.</div>
+  <div class="card"><b>Writes honest CVs</b>In the ad's language and the country's format (pages, photo, consent line); Word + PDF.</div>
+  <div class="card"><b>Keeps track</b>Application tracker, weekly summary, follow-up drafts, interview prep.</div>
+</div>
+
+<h2>It never</h2>
+<ul class="no">
+  <li>sends an application, email or message without your OK (it shows you what it wrote first)</li>
+  <li>asks for your passwords, ID numbers or card details</li>
+  <li>adds software, years or numbers to your CV that you didn't tell it</li>
+</ul>
+
+<h2>Setup</h2>
+<ol class="steps">
+  <li>Open the Claude desktop app and switch to <b>Code</b> (or run <code>claude</code> in a terminal).</li>
+  <li>Paste: <code>Install this: https://github.com/applywing/applywing</code></li>
+  <li>Claude asks for permission twice; allow both. Done.</li>
+  <li>Open a new session and write <b>"I'm looking for a job"</b> in your language. It asks the rest: creates your job folder, installs Python for the CV program if needed (with your permission), and asks one question at a time.</li>
+</ol>
+<div class="note">Using claude.ai chat without Code? <a href="indir/applywing.zip" download>Download the ZIP</a> → <code>Customize → Skills → + → Upload a skill</code>.</div>
+
+<h2>If it doesn't work</h2>
+<ul>
+  <li>Did you open a <b>new session</b> after installing? (The assistant loads when a session starts.)</li>
+  <li>Did you allow the permissions Claude asked for?</li>
+  <li>Next time, open Claude Code in your job folder and write "continue".</li>
+  <li>Stuck? Tell Claude: "The Applywing install didn't work, can you fix it?"</li>
+</ul>
+
+<h2>FAQ</h2>
+<details><summary>Which countries?</summary><p>Any country you're job hunting in. It writes the CV in the ad's language and the country's format (the CV program writes Latin, Cyrillic and Greek letters). Job-site suggestions are ready for popular countries; for others it searches.</p></details>
+<details><summary>Is it paid?</summary><p>The assistant is free. Needs Claude Code (paid Claude plan: Pro or Max).</p></details>
+<details><summary>Can you see my CV?</summary><p>No. Your files are on your own computer and your chats are in your own Claude account. Nobody who made the assistant sees anything.</p></details>
+<details><summary>Will it apply for me?</summary><p>Almost: it prepares the CV and cover letter, fills in the form and shows you what it wrote; when you say "send", it sends. Logging in and passwords stay with you.</p></details>
+<details><summary>Will it get me a job?</summary><p>No guarantees. It saves time, filters out unsuitable ads, never invents anything on your CV and prepares you for interviews.</p></details>
+<details><summary>Does it log into my LinkedIn?</summary><p>No. LinkedIn forbids automation. The assistant uses the sites' own job alert emails and public job pages.</p></details>
+<details><summary>Does it work on my phone?</summary><p>It runs in Claude Code on your computer. Send the CVs it makes to your phone and apply from there; if you want, it checks for new jobs every morning and only pings you when you need to act.</p></details>
+<details><summary>Where is my data?</summary><p>In a "Job Search" folder on your own computer: your profile, your CVs, your application tracker. Claude reads these files while you work together; job sites get only what you approve for that application. If the folder is inside a cloud folder like OneDrive, it is copied there too.</p></details>
+<details><summary>Does it use up my Claude usage limit?</summary><p>Claude plans have a usage limit that resets every few hours, plus a weekly one. Searching job sites and emails uses the most, so the assistant does that with a lighter Claude model and keeps the stronger one for your CV and letters. The more often the automatic check runs, the more it uses. If the limit runs out, Claude waits until it resets; nothing is lost.</p></details>
+<details><summary>Can I see an example?</summary><p><a href="indir/ornek-cv.pdf">Example CV for a fictional person (PDF)</a></p></details>
+
+<h2>Claude Pro users</h2>
+<p>Get updates automatically: <code>Customize → Plugins → Add marketplace → applywing/applywing</code></p>
+</div>
+
+<footer>
+<span data-lang="tr">Applywing v0.6.0 · Claude ile çalışan ücretsiz bir skill · Anthropic ile bağlantılı değildir ·
+İş ya da mülakat garantisi yoktur; her çıktıyı göndermeden önce kendin kontrol et · 18 yaş üstü · MIT lisansı</span>
+<span data-lang="en">Applywing v0.6.0 · a free skill that works with Claude · not affiliated with Anthropic ·
+no job or interview guarantee; check every output before sending · 18+ · MIT license</span>
+</footer>
+</main>
+<script>
+(function () {
+  var html = document.documentElement;
+  function set(lang) {
+    html.lang = lang;
+    document.querySelectorAll("[data-set]").forEach(function (b) {
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-set") === lang));
+    });
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+  }
+  var saved = null;
+  try { saved = localStorage.getItem("lang"); } catch (e) {}
+  var nav = (navigator.language || "en").toLowerCase();
+  set(saved || (nav.indexOf("tr") === 0 ? "tr" : "en"));
+  document.querySelectorAll("[data-set]").forEach(function (b) {
+    b.addEventListener("click", function () { set(b.getAttribute("data-set")); });
+  });
+})();
+</script>
+</body>
+</html>

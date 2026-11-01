@@ -1,0 +1,1 @@
+Thank you for your question. I haven't used SAP professionally yet. In my last role I checked supplier invoices against the original orders before passing them to the external accountant, so the matching workflow is familiar to me.

@@ -1,0 +1,27 @@
+{
+  "_note": "DELIBERATELY BAD example: shows the check catching banned phrases. No CV is given from this.",
+  "company": "Bluewave Travel Services",
+  "role": "Customer Support Specialist with Turkish",
+  "headline": "Passionate Customer Support Team Leader",
+  "profile": "Results-driven professional with 5 years of experience in SAP and Salesforce, looking for a role where I can learn — advanced Excel user with AI assistance.",
+  "skills": [
+    "Team player",
+    "Fluent Polish"
+  ],
+  "experience": [
+    [
+      "travel",
+      [
+        "calls",
+        "zendesk"
+      ]
+    ],
+    [
+      "furniture",
+      [
+        "orders"
+      ]
+    ]
+  ],
+  "coverLetter": "Dear Sir or Madam,\n\nI am passionate about joining this prestigious company. I haven't used your booking system yet but I am eager to learn it. In my last job I achieved 95% customer satisfaction and managed a team of 8 people.\n\nBest regards,\nEce Yildirim"
+}
