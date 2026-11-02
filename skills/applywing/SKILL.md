@@ -298,7 +298,7 @@ People use one thing and rarely look for the rest, so show it, briefly:
 | 3. CV + cover letter | "apply" | `references/honesty.md` + `references/countries.md` | PDF + Word CV, cover letter (§6) |
 | 4. Applying | Batch approved, "apply", a form is open | `references/applying.md` + `references/form-answers.md` | You fill the form, show what you wrote, send after their yes; record in `jobs/` |
 | 5. Tracking | "sent it", "rejected", "how was this week" | `references/tracking.md` | Tracker row, rejection news (a factual bullet + running total), weekly summary, follow-up draft |
-| 6. Interview | "I got an interview" | `references/interview.md` | Prep + boot camp in `Interviews/<company>/`, 🔴 things to clarify, mock interviews |
+| 6. Interview | "I got an interview" | `references/interview.md` | Prep + boot camp in `Interviews/<company>/` (plus one private page if the app can publish pages), 🔴 things to clarify, mock interviews |
 | 7. Watch | "check every morning", setup | `references/watch.md` | Scheduled checks, notifies only when action is needed |
 | 8. Review | review day, "why no replies?", after ~10/20/50 applications, a fact correction | `references/review-and-learning.md` | Weekly review, next week's plan, rejection patterns, second-eye review, decisions |
 | 8b. Situation | setup Part 1, the person's situation changes | `references/segments.md` | Group settings (new graduate, changing field, executive, abroad…), expectations |

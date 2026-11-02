@@ -68,6 +68,17 @@ Make a folder `Interviews/<company>/` and, with the person, work through it:
 | `skill-test.md` | If a live test is likely (Excel, typing, a case): an exercise in the role's context, done **without AI** |
 | `rehearsals.md` | Mock interviews: a prompt the person pastes into a voice-mode AI (e.g. the Claude app's voice mode): "You are the interviewer for <role> at <company>. Speak simple English. Use only these facts: … Ask one question at a time, follow up once, give a score out of 10 and the best and weakest answer at the end." After each rehearsal log: score, best part, weakest part, 3 golden rules for next time |
 
+**One page for all of it.** If this Claude app can publish a page (an Artifact tool, for example), also turn
+these files into one private page the person can open on any device, phone included:
+- **Header:** company · role · date, time and format · a countdown.
+- **Tabs:** Summary (the prep document) · Plan (the tasks as checkboxes) · Basic set (the 70-second intro
+  and answers) · Likely questions · Rehearsals (a score table) · Language kit · CV in their language, plus Crash
+  course and Skill test when those exist.
+- The `.md` files stay the source. When they change, republish the same page; don't make a new one.
+- Tell the person once: "It's private to your Claude account; open it on your phone before the interview."
+  Never share it publicly: it holds personal details.
+- No page tool → the files are enough.
+
 - **Research (ask first):** the ad, the company's public site, and if the person wants, the interviewers'
   public professional profiles. Optionally a short, honest message to someone in the same team; by email:
   shown, then sent on the person's yes; on LinkedIn the person sends it (no automation there).
