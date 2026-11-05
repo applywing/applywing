@@ -1,4 +1,4 @@
-# Applywing v0.6.0
+# Applywing v0.6.1
 
 A **free** job application assistant for **Claude Code**, for anyone, applying in any country. It reads
 your CV, searches the job sites you choose (and suggests

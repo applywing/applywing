@@ -17,6 +17,34 @@ fills it themselves, give them the list at the end of this file.
 | E5 | ID numbers, date of birth, passport: **never asked for or stored by the skill**; the person types them. |
 | E6 | Consent boxes (GDPR, terms, "I declare…"): read them, summarise each in one line before sending, tick on the person's yes. Never tick a declaration that isn't true. |
 | E7 | Optional diversity questions: "Prefer not to say" unless the person says otherwise. |
+| E8 | **A question you have no answer for.** **Close variant** of something the person already told you (same fact, other wording or format) → fill it from that answer and mark it in the summary. **New fact** → leave the field empty and ask the person before sending; never guess. Details below. |
+
+## E8 in practice: close variant or new fact?
+
+**Close variant: take the small risk, fill it, say where it came from.** The answer follows directly from
+something already in the profile:
+- "Notice period" when the profile says "currently employed: no" → "None / immediately".
+- "Are you legally allowed to work in <country>?" when the permit answers are recorded.
+- The language level asked as "fluent / conversational / basic", or a different scale, mapped from the
+  recorded A1–C2 level (E4).
+- A salary dropdown with ranges → the range that contains the recorded figure.
+- "Willing to work hybrid?" when the profile says office, hybrid or remote are all fine.
+- "Where did you hear about this job?" → the channel the ad came from.
+
+In the summary before sending, mark each one: `"Notice period": None (from your answer "not employed now")`.
+The person sees it and can correct it with one word.
+
+**New fact: don't fill, don't send, ask.** Nothing in the profile answers it:
+- a tool, skill, certificate or licence not recorded;
+- years of experience in something not recorded;
+- willingness to travel or relocate, or a shift pattern, that the profile doesn't cover;
+- a yes/no about the person's history: a past application to this company, references, a criminal record,
+  health, previous salary;
+- any declaration.
+
+Leave the field empty and put the question in the summary under "Needs your answer". When the person
+answers, fill it, add the answer to `standardAnswers` and `profile.md` so the same question is never asked
+again, then ask "Send it?". In a batch, fill everything else and ask all the open questions in one message.
 
 ## Form nuances learned in practice
 

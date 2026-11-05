@@ -1,6 +1,6 @@
 {
   "name": "applywing",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Applywing: job-search buddy. Finds jobs, writes honest CVs and cover letters (Word + PDF) for each country's customs, fills application forms after your OK, tracks applications, prepares interviews. Free; not affiliated with Anthropic.",
   "author": {
     "name": "applywing"

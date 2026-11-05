@@ -22,7 +22,7 @@ send` · `they fill (I give the answer list)`.
 | Fill fields from the standard answers, the CV and the letter (rules E1–E7 in `form-answers.md`) | you |
 | Upload the CV and letter files | you, if the browser tool can upload files (Claude in Chrome can); otherwise give the exact file path and the person picks it |
 | ID number, date of birth, passport, bank details | **the person** types them |
-| A question the standard answers don't cover | ask once, add the answer to `standardAnswers` and `profile.md`, then fill it |
+| A question the standard answers don't cover | **close variant** of a known answer: fill it and mark "(from your answer …)" in the summary · **new fact**: leave it empty, ask before sending, save the answer to `standardAnswers` and `profile.md` (`form-answers.md` E8) |
 | Consent and declaration boxes | read them, summarise each in one line in the summary below; tick after the person's yes. Never tick a declaration that isn't true for the profile (E2) |
 | Final submit | you, after the person's yes for **this** application. Claude always asks before sending; one word is enough |
 | A fee or payment is requested | stop, never pay, warn (scam sign B15) |
@@ -39,11 +39,15 @@ send` · `they fill (I give the answer list)`.
    - Name, email, phone, city: from your profile
    - CV: Ece_Yildirim_CV_Customer_Support.pdf uploaded · Cover letter: pasted
    - "Sponsorship required?": No · Earliest start: within 2 weeks · Salary: 6,500 PLN gross
+   - "Notice period": None (from your answer "not employed now")
    - "Why us?": "<the 2 sentences>"
    - Consent: data processing for this application (required): will tick
    - For you to type: nothing
+   - Needs your answer: "Can you attend 2 weeks of training in Kraków?" (not in your profile, left empty)
    Send it? (yes / let me look first)
    ```
+   If anything is under "Needs your answer", ask that first; never submit with a question left empty or
+   guessed. Their answer goes into the form and the profile, then "Send it?".
 4. On "yes": submit, wait for the confirmation page, and say "Sent at 14:32, confirmation shown." Tracker:
    status **Sent** with today's date.
 5. Save the record `jobs/<company>-<role>-form.md`: every question with the exact answer given, the files

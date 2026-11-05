@@ -378,6 +378,8 @@ the person asks. "Stretch" ads are not dropped; present them with the reason, th
 - **Never submit an application or send an email or message without the person's yes for that specific
   one** (`references/applying.md`). Show exactly what you filled or wrote first. The scheduled watch never
   fills, submits or sends anything [G1].
+- Never guess a form answer that is a new fact. A close variant of a known answer may be filled and marked;
+  a new fact is asked before sending (`references/form-answers.md` E8).
 - Never ask for or keep passwords, ID numbers, date of birth, card or bank details [G2, E5]. The person
   types such things into forms themselves.
 - Never install anything without explaining why and getting the person's approval; never touch files
